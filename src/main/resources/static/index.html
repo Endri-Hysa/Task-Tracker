@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Tracker - Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="login-page">
+
+<div class="login-container">
+    <div class="card">
+        <h2>Task Tracker</h2>
+
+        <div class="tabs">
+            <button class="tab active" onclick="showTab('login')">Login</button>
+            <button class="tab" onclick="showTab('register')">Register</button>
+        </div>
+
+        <div id="alert" class="alert" style="display:none"></div>
+
+        <div id="loginForm">
+            <div class="form-group">
+                <label>Username</label>
+                <input type="text" id="loginUsername" placeholder="Username">
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" id="loginPassword" placeholder="Password">
+            </div>
+            <button class="btn btn-primary" style="width:100%" onclick="login()">Login</button>
+        </div>
+
+        <div id="registerForm" style="display:none">
+            <div class="form-group">
+                <label>Username</label>
+                <input type="text" id="regUsername" placeholder="Min 3 karaktere">
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" id="regEmail" placeholder="email@example.com">
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" id="regPassword" placeholder="Min 8 karaktere">
+            </div>
+            <button class="btn btn-success" style="width:100%" onclick="register()">Register</button>
+        </div>
+    </div>
+</div>
+
+<script src="js/auth.js"></script>
+</body>
+</html>
