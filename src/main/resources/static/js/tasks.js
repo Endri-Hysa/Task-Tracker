@@ -11,7 +11,7 @@ if (!auth || !username || !projectId) {
     throw new Error('Not authenticated');
 }
 
-document.getElementById('welcomeMsg').textContent = `👋 ${username}`;
+document.getElementById('welcomeMsg').textContent = `User: ${username}`;
 document.getElementById('projectTitle').textContent = projectName;
 
 const isOwner = username === projectOwner;

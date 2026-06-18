@@ -7,7 +7,7 @@ if (!auth || !username) {
     window.location.replace('index.html');
     throw new Error('Not authenticated');
 }
-document.getElementById('welcomeMsg').textContent = `👋 ${username}`;
+document.getElementById('welcomeMsg').textContent = `User: ${username}`;
 
 function logout() {
     localStorage.clear();
@@ -154,5 +154,4 @@ function viewTasks(projectId, projectName, ownerUsername) {
     window.location.href = 'tasks.html';
 }
 
-// Ngarko projektet kur hapet faqja
 loadProjects();

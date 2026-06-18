@@ -12,6 +12,7 @@ CREATE TABLE task_activities (
 INSERT INTO users (username, email, password, created_at) VALUES
                                                               ('admin', 'endrihysa4@gmail.com', '$2a$10$GNKMgtJLLhhwNAgn5cDNmuykoO7nOjvYo4LTTrUu0zhN0hNxNG7Oi', CURRENT_TIMESTAMP),
                                                               ('endri', 'endrihysa04@gmail.com', '$2a$10$A0Sl/jkuirh6erM22r4PDOpoRvbShB9GgD9L/qe79MeFsQ3I9X9M6', CURRENT_TIMESTAMP),
+                                                              ('bjorni', 'bjornivani98@gmail.com', '$2a$10$A0Sl/jkuirh6erM22r4PDOpoRvbShB9GgD9L/qe79MeFsQ3I9X9M6', CURRENT_TIMESTAMP),
                                                               ('iva', 'endrihysa0@gmail.com', '$2a$10$ybrXJeJu8ZMcueYf/Z.ThOlPe8PhX/o/sQS6p0bsc/OvTREnGaTCi', CURRENT_TIMESTAMP);
 
 INSERT INTO projects (name, description, owner_id, created_at) VALUES
@@ -23,4 +24,8 @@ INSERT INTO tasks (title, description, status, priority, due_date, project_id, a
                                                                                                             ('Task 1', 'Pershkrimi i task 1', 'TODO', 'HIGH', '2026-07-01', 1, 1, CURRENT_TIMESTAMP),
                                                                                                             ('Task 2', 'Pershkrimi i task 2', 'IN_PROGRESS', 'MEDIUM', '2026-07-05', 1, 2, CURRENT_TIMESTAMP),
                                                                                                             ('Task 3', 'Pershkrimi i task 3', 'COMPLETED', 'LOW', '2026-06-15', 2, 3, CURRENT_TIMESTAMP),
-                                                                                                            ('Task 4', 'Pershkrimi i task 4', 'TODO', 'HIGH', '2026-07-10', 3, 1, CURRENT_TIMESTAMP);
+                                                                                                            ('Task 4', 'Pershkrimi i task 4', 'TODO', 'HIGH', '2026-07-10', 3, 1, CURRENT_TIMESTAMP),
+                                                                                                            ('Task 5', 'Pershkrimi i task 5', 'TODO', 'HIGH', '2026-07-01', 1, 1, CURRENT_TIMESTAMP),
+                                                                                                            ('Task 6', 'Pershkrimi i task 6', 'IN_PROGRESS', 'MEDIUM', '2026-07-05', 1, 2, CURRENT_TIMESTAMP),
+                                                                                                            ('Task 7', 'Pershkrimi i task 7', 'COMPLETED', 'LOW', '2026-06-15', 2, 3, CURRENT_TIMESTAMP),
+                                                                                                            ('Task 8', 'Pershkrimi i task 8', 'TODO', 'HIGH', '2026-07-10', 3, 1, CURRENT_TIMESTAMP);

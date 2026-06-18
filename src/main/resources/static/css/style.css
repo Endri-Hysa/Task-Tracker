@@ -308,3 +308,29 @@ body {
     font-size: 24px;
     color: #1a1a2e;
 }
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    padding: 10px 22px;
+
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+
+    border-radius: 8px;
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+
+    transition: all 0.2s;
+}
+
+.back-link:hover {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+    transform: translateY(-1px);
+}
